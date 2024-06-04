@@ -36,6 +36,20 @@ Headless UI: For unstyled, accessible UI components.
 Heroicons: High-quality SVG icons as React components.
 
 # Getting Started
-1. Clone the repository:
-   git clone https://github.com/yourusername/finance-dashboard.git
+# 1. Clone the repository:
+  git clone https://github.com/Moyo-Made/-Finance-Dashboard.git
+   
    cd finance-dashboard
+
+# 2. Install dependencies:
+
+npm install
+
+# 3. Run the development server:
+
+npm run dev
+
+# 4. Open your browser:
+
+Navigate to http://localhost:3000 to see your dashboard in action.
+   
