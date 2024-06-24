@@ -48,16 +48,6 @@ const Total = () => {
 						</div>
 							<CircularProgressBar percentage={5} />
 					</div>
-					{/* <p>Balance: ${userData.balance}</p>
-					<h2>Recent Transactions</h2>
-					<ul>
-						{userData.recentTransactions.map((transaction: any) => (
-							<li key={transaction.id}>
-								{transaction.date}: {transaction.description} - $
-								{transaction.amount} ({transaction.type})
-							</li>
-						))}
-					</ul> */}
 				</div>
 			</div>
 		</div>
