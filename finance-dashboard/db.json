@@ -1,0 +1,25 @@
+{
+	"userData": {
+	  "totalIncome": 5000,
+	  "totalExpenses": 3000,
+	  "totalBonus": 500,
+	  "balance": 2500,
+	  "recentTransactions": [
+		{ "id": 1, "date": "2023-06-20", "amount": 50, "type": "expense", "description": "Groceries" },
+		{ "id": 2, "date": "2023-06-21", "amount": 100, "type": "expense", "description": "Utilities" },
+		{ "id": 3, "date": "2023-06-22", "amount": 20, "type": "expense", "description": "Transport" }
+	  ],
+	  "calendarTransactions": {
+		"2023-06-20": [
+		  { "id": 1, "amount": 50, "type": "expense", "description": "Groceries" }
+		],
+		"2023-06-21": [
+		  { "id": 2, "amount": 100, "type": "expense", "description": "Utilities" }
+		],
+		"2023-06-22": [
+		  { "id": 3, "amount": 20, "type": "expense", "description": "Transport" }
+		]
+	  }
+	}
+  }
+  
