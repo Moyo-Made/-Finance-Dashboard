@@ -37,7 +37,7 @@ const Balance = () => {
 	};
 	return (
 		<div>
-			<p className="font-semibold mt-[4.5rem] text-[#00000096]">My Account</p>
+			<p className="font-medium mt-[4.5rem] text-[#000000af]">My Account</p>
 			<div className="w-52 h-32 bg-[#0f0f0f] text-white rounded-lg mt-1">
 				{" "}
 				<div className="pl-5 pt-5">
@@ -52,7 +52,6 @@ const Balance = () => {
 						{displayAccountNumber}
 					</span>
 				</div>
-				
 			</div>
 
 			<RecentTransactions />
