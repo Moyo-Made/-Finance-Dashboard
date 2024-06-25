@@ -20,7 +20,7 @@ const Sidebar = () => {
 
 	return (
 		<div
-			className={`bg-[#000000] border-4 border-[#e7e7e7f8] h-[650px] rounded-lg text-[#ffff]
+			className={`bg-[#000000f6] border-4 border-[#e7e7e7f8] h-[650px] rounded-lg text-[#ffff]
 			 transition-all duration-300 ${isCollapsed ? "w-[80px]" : "w-[250px]"}`}
 		>
 			<div className="text-center pt-5">
