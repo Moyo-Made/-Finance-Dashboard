@@ -3,8 +3,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Logo from "@/public/images/logo.png";
-import navLinks from "@/data"
+import navLinks from "@/data";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const Sidebar = () => {
 	const [activeNav, setActiveNav] = useState(null);
@@ -47,27 +48,30 @@ const Sidebar = () => {
 				</div>
 
 				{/* Sidebar Icons */}
+
 				<div className="grid gap-8 mt-7 cursor-pointer">
 					{navLinks.map((link) => (
-						<div
-							key={link.name}
-							className={`flex items-center cursor-pointer ${
-								activeNav === link.name ? "bg-[#414141f8] text-white " : ""
-							} ${
-								isCollapsed
-									? "justify-center w-12 h-12 rounded-md ml-2"
-									: "w-[175px] h-[40px] rounded-md ml-8"
-							}
-							`}
-							onClick={() => handleNavClick(link.name)}
-						>
-							<span className="pl-3">{link.icon}</span>
-							{!isCollapsed && (
-								<p className="text-[14px] text-start mt-[2px] ml-2">
-									{link.label}
-								</p>
-							)}
-						</div>
+						<Link href={link.path} key={link.name}>
+							{" "}
+							<div
+								className={`flex items-center cursor-pointer ${
+									activeNav === link.name ? "bg-[#414141f8] text-white " : ""
+								} ${
+									isCollapsed
+										? "justify-center w-12 h-12 rounded-md ml-2"
+										: "w-[175px] h-[40px] rounded-md ml-8"
+								}
+        `}
+								onClick={() => handleNavClick(link.name)}
+							>
+								<span className="pl-3">{link.icon}</span>
+								{!isCollapsed && (
+									<p className="text-[14px] text-start mt-[2px] ml-2">
+										{link.label}
+									</p>
+								)}
+							</div>
+						</Link>
 					))}
 				</div>
 			</div>
