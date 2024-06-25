@@ -31,7 +31,7 @@ const RecentTransactions = () => {
 	return (
 		<div>
 			<h2 className="font-medium mt-3 text-[#000000af]">Recent Transactions</h2>
-			<ul className="w-60 h-[21rem] bg-[#0f0f0f] text-white rounded-lg mt-1">
+			<ul className="w-56 h-[21rem] bg-[#222121f6] text-white rounded-lg mt-1">
 				{/* Render today's transactions */}
 				{userData.recentTransactions.some(
 					(transaction: any) => transaction.date === today
@@ -58,7 +58,7 @@ const RecentTransactions = () => {
 												<span>{transaction.date}</span>
 											</div>
 										</div>
-										<span className="mr-4">${transaction.amount}</span>{" "}
+										<span className="mr-5 text-[15px]">${transaction.amount}</span>{" "}
 									</div>
 								</li>
 							))}
