@@ -38,7 +38,7 @@ const Balance = () => {
 	return (
 		<div>
 			<p className="font-medium mt-[4.5rem] text-[#000000af]">My Account</p>
-			<div className="w-52 h-32 bg-[#0f0f0f] text-white rounded-lg mt-1">
+			<div className="w-52 h-32 bg-[#222121f6] text-white rounded-lg mt-1">
 				{" "}
 				<div className="pl-5 pt-5">
 					<p className="text-sm font-lighter">Balance</p>
