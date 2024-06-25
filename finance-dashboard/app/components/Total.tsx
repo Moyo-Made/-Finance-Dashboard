@@ -22,12 +22,12 @@ const Total = () => {
 
 	return (
 		<div className="ml-10 mt-7">
-			<div className="w-[37rem] h-36 bg-[#000000] text-white rounded-lg">
+			<div className="w-[37rem] h-36 bg-[#222121f6] text-white rounded-lg">
 				{" "}
 				<div className="flex gap-6 p-4">
 					<div className="flex mt-5 gap-2">
 						<div className="mt-3">
-							<span className="text-sm font-lighter">Total Income</span>
+							<span className="text-[12px] font-lighter">Total Income</span>
 							<p className="text-md font-medium"> ${userData.totalIncome}</p>
 						</div>
 						<CircularProgressBar percentage={58} />
