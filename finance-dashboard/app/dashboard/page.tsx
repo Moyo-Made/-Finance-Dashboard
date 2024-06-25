@@ -3,23 +3,33 @@
 import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/Sidebar";
-import { User } from "lucide-react";
+import Total from "../components/Total";
+import IncomeExpenseChart from "../components/IncomeExpenseChart";
+import Balance from "../components/Balance";
+import { useTheme } from "../components/ThemeContext";
+import ToggleSwitch from "../components/ToggleSwitch";
 
 const Dashboard: React.FC = () => {
-	const [user, setUser] = useState<{ username: string } | null>(null);
+	const { theme, toggleTheme } = useTheme();
 
 	return (
-		<div className="flex w-full h-full bg-[#f7f7f7] border-[20px] border-white rounded-lg">
-			{user && (
-					<div className="flex items-center p-4 bg-white rounded-md shadow-md">
-					<User className="text-4xl text-gray-700 mr-4" />
-					<div>
-						<p className="text-lg font-medium">Welcome, {user.username}!</p>
-					</div>
-				</div>
-			)}
+		<div
+			className={`flex w-full h-full ${
+				theme === "dark"
+					? "bg-[#000000] text-[#ffffff]"
+					: "bg-[#ffffff] text-[#000000]"
+			} border-[20px] border-white rounded-lg`}
+		>
 			<Sidebar />
-			<SearchBar />
+			<div>
+				<SearchBar />
+				<Total />
+				<IncomeExpenseChart />
+			</div>
+			<Balance />
+			<div className="fixed mt-6 mr-5 top-4 right-4">
+				<ToggleSwitch isOn={theme === "dark"} handleToggle={toggleTheme} />
+			</div>
 		</div>
 	);
 };
