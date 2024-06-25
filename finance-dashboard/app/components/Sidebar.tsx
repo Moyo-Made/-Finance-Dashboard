@@ -61,7 +61,7 @@ const Sidebar = () => {
 							`}
 							onClick={() => handleNavClick(link.name)}
 						>
-							{link.icon}
+							<span className="pl-3">{link.icon}</span>
 							{!isCollapsed && (
 								<p className="text-[14px] text-start mt-[2px] ml-2">
 									{link.label}
