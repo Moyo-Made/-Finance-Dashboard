@@ -2,8 +2,8 @@
 
 import React from "react";
 import { AppProps } from "next/app";
-import { ThemeProvider } from "./components/ThemeContext";
 import Dashboard from "./dashboard/page";
+import { ThemeProvider } from "./components/ThemeContext";
 
 const page: React.FC<AppProps> = ({ pageProps }) => {
 	return (
