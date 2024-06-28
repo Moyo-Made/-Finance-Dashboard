@@ -23,7 +23,6 @@ const SearchBar: React.FC = () => {
 
 	return (
 		<div className="flex ml-10 mt-4">
-  //Search bar
 			<form
 				onSubmit={handleSearch}
 				className="flex items-start w-[300px] h-10 bg-gray-200 rounded-full"
