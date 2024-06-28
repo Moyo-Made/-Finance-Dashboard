@@ -8,7 +8,7 @@
 		"recentTransactions": [
 			{
 				"id": 1,
-				"date": "2024-06-27",
+				"date": "",
 				"amount": 50,
 				"type": "expense",
 				"description": "Dinner",
@@ -16,7 +16,7 @@
 			},
 			{
 				"id": 2,
-				"date": "2024-06-27",
+				"date": "",
 				"amount": 30,
 				"type": "expense",
 				"description": "Coffee",
@@ -24,7 +24,7 @@
 			},
 			{
 				"id": 3,
-				"date": "2024-06-27",
+				"date": "",
 				"amount": 120,
 				"type": "expense",
 				"description": "Shopping",
@@ -32,7 +32,7 @@
 			},
 			{
 				"id": 4,
-				"date": "2024-06-24",
+				"date": "",
 				"amount": 50,
 				"type": "expense",
 				"description": "Books",
@@ -40,7 +40,7 @@
 			},
 			{
 				"id": 5,
-				"date": "2024-06-24",
+				"date": "",
 				"amount": 100,
 				"type": "expense",
 				"description": "Utilities",
