@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Search } from "lucide-react";
 import { Bell } from "lucide-react";
 import { Mail } from "lucide-react";
+import Link from "next/link";
 
 const SearchBar: React.FC = () => {
 	const [notifications, setNotifications] = useState<number>(3);
@@ -46,8 +47,8 @@ const SearchBar: React.FC = () => {
 						</div>
 					)}
 				</div>
-
-				| <div className="relative">
+				|{" "}
+				<div className="relative">
 					<Mail className="text-3xl text-blue-700 " />
 					{mail > 0 && (
 						<div className="absolute top-0 right-0 flex items-center justify-center w-3 h-3 bg-red-600 text-white text-[10px] font-bold rounded-full">
