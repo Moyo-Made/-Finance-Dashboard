@@ -1,41 +1,28 @@
 import {
 	MdSpaceDashboard,
-	MdOutlineFavorite,
-	MdAccountCircle,
 } from "react-icons/md";
-import { SlCalender } from "react-icons/sl";
+import { BarChart4 } from 'lucide-react';
 import { IoSettingsSharp } from "react-icons/io5";
+import { BadgeDollarSign } from 'lucide-react';
 
 const navLinks = [
 	{
 		name: "dashboard",
 		label: "Dashboard",
-		icon: <MdSpaceDashboard className="text-2xl ml-3" />,
-		path: "/dashboard",
+		icon: <MdSpaceDashboard className="text-3xl ml-3" />,
+		path: "/",
 	},
 	{
-		name: "calender",
-		label: "Calender",
-		icon: <SlCalender className="text-2xl ml-3" />,
-		path: "/calender",
+		name: "insights",
+		label: "Insights",
+		icon: <BarChart4 className="text-3xl ml-3" />,
+		path: "/insights",
 	},
 	{
-		name: "settings",
-		label: "Settings",
-		icon: <IoSettingsSharp className="text-2xl ml-3" />,
-		path: "/calender",
-	},
-	{
-		name: "favorite",
-		label: "Favorite",
-		icon: <MdOutlineFavorite className="text-2xl ml-3" />,
-		path: "/calender",
-	},
-	{
-		name: "account",
-		label: "Account",
-		icon: <MdAccountCircle className="text-2xl ml-3" />,
-		path: "/calender",
+		name: "transactions",
+		label: "Transactions",
+		icon: <BadgeDollarSign className="text-3xl ml-3" />,
+		path: "/transactions",
 	},
 ];
 
