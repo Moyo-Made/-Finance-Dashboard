@@ -48,7 +48,7 @@ const RecentTransactions = () => {
 		return IconComponent ? <IconComponent size={25} /> : null;
 	};
 
-	if (!userData) return <p>No data available</p>;
+	if (!userData) return <p>Loading data...</p>;
 
 	const todayFormatted = userData.recentTransactions[0].date;
 	const yesterdayFormatted = userData.recentTransactions[1].date;
@@ -64,11 +64,11 @@ const RecentTransactions = () => {
 	return (
 		<div>
 			<h2 className="font-medium mt-3 text-[#000000af]">Recent Transactions</h2>
-			<ul className="w-56 h-[21rem] bg-[#222121f6] text-white rounded-lg mt-1">
+			<ul className="w-72 h-[21rem] bg-[#222121f6] text-white rounded-lg mt-1">
 				{/* Render today's transactions */}
 				{todayTransactions.length > 0 && (
 					<>
-						<h3 className="text-md font-normal text-gray-300 ml-2 pt-2">
+						<h3 className="text-[18px] font-normal text-gray-300 ml-2 pt-2">
 							Today
 						</h3>
 						{todayTransactions.map((transaction: any) => (
@@ -79,7 +79,7 @@ const RecentTransactions = () => {
 											<span className="bg-[#f7f7f7] text-black pl-1 pt-1 rounded-md w-8 h-8 ml-2">
 												{getIconComponent(transaction.icon)}
 											</span>{" "}
-											<p className="text-sm font-normal ml-2">
+											<p className="text-md font-normal ml-2">
 												{transaction.description}
 											</p>
 										</div>
@@ -96,7 +96,7 @@ const RecentTransactions = () => {
 				{/* Render yesterday's transactions */}
 				{yesterdayTransactions.length > 0 && (
 					<>
-						<h3 className="text-md font-normal text-gray-300 ml-2 pt-4">
+						<h3 className="text-[18px] font-normal text-gray-300 ml-2 pt-4">
 							Yesterday
 						</h3>
 						{yesterdayTransactions.map((transaction: any) => (
@@ -107,7 +107,7 @@ const RecentTransactions = () => {
 											<span className="bg-[#f7f7f7] text-black pl-1 pt-1 rounded-md w-8 h-8 ml-2">
 												{getIconComponent(transaction.icon)}
 											</span>{" "}
-											<p className="text-sm font-normal ml-2">
+											<p className="text-md font-normal ml-2">
 												{transaction.description}
 											</p>
 										</div>
